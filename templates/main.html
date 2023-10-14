@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ChatSplash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #EED9C4;
+        }
+        h1 {
+            color: #342D7E;
+        }
+        p {
+            color: #000000;
+        }
+        .chatgpt-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .header {
+            background-color: #040720;
+            color: #f5f5dc;
+            padding: 4px;
+            width: 101%;
+        }
+        .header a{
+            color: #f5f5dc;
+            text-decoration: none;
+            margin: 15px;
+            position: relative;
+            top: -30px;
+            
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .content-text {
+            flex: 1;
+            text-align: left;
+        }
+        .mascot {
+            flex: 1;
+            text-align: right;
+        }
+
+        .favicon {
+            position: relative;
+            left: -730px;
+            top: 15px;
+        }
+
+        .heading{
+            position: relative; left: -430px; 
+            top: -300px;    
+        }
+
+        .get-started-button {
+            background-color: #040720;
+            color: #f5f5dc; 
+            border: none; 
+            padding: 10px 20px;
+            border-radius: 5px; 
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="position: relative; top: -10px; left: -7.7px;">
+        <div>
+            <img style="height: 50px; width: 50px;" class="favicon" src="{{url_for('static', filename='favicon_edited-removebg-preview.png')}}" alt="">
+        </div>
+        <div>
+        <a style="font-size: xx-large;" class="heading" href="https://www.amity.edu/aset/CyberCup2023/AI_and_CloudComputing.html">Amity AI</a>
+        <a style="position: relative; vertical-align:middle; text-align: center" href="#help">Help</a>
+        <a style="position: relative; vertical-align:middle; text-align: center" href="#contacts">Contact</a>
+        <a style="position: relative; vertical-align:middle; text-align: center" href="#about">About</a>
+        <a style="position: relative; vertical-align:middle; right: -490px" href="#login_page">Login</a>
+        <a style="position: relative; vertical-align:middle; right: -490px" href="#signup_interface">Signup</a>
+        </div>
+        
+    </div>
+    
+  
+    <div class="content-container">
+        <div class="content-text">
+            <h1 style="font-size: 60px; font-weight: bold;">Introducing ChatSplash</h1>
+            <p>We've created a model called ChatSplash which is based on the OpenAI server. We have made this chatbot with an intention of saving water bodies on this planet, The dialogue format makes it possible for ChatSplash to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests. All this, along with our magical mascot, Drizzle makes this chatbot a uniquely fun experience to use, along with the perk of doing something for the planet altogether.</p>
+        </div>
+
+        <button style="position: relative; left: -450px; top: 240px" class="get-started-button" onclick="window.location.href='/light_mode'">Get Started</button>
+
+        <div class="mascot">
+            <img src="{{url_for('static', filename='Mascot.png')}}" alt="Mascot" style="width: 350px; height: auto; background-color: #EED9C4;">
+        </div>
+        
+    </div>
+    <script></script>
+</body>
+</html>

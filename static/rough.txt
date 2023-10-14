@@ -1,0 +1,56 @@
+<style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .image {
+            width: 200px; 
+            height: 200px; 
+            object-fit: cover;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 250px;
+            background-color: #EED9C4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container:hover .menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-item {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .right2{
+            display : none;
+        }
+        
+
+    </style>
+
+
+
+
+    <!--MEnu Here-->
+                    <div class="container">
+                        <img style="position: relative; top: 501px; left:80px; height: 140px;" onclick="window.location.href = '/dark_mode'" src="{{url_for('static', filename='Drizzle.png')}}" alt="Your Image" class="image">
+                
+                        
+                        <div class="menu">
+                            <div class="menu-item">Fact Of The Day</div>
+                            <div class="menu-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, qui voluptatum facilis harum nemo placeat sapiente praesentium nisi fugiat quidem nam!</div>
+                            <div class="menu-item">Click on Me for other settings!</div>
+                        </div>
+                    </div>
+
+
+API Key: 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
