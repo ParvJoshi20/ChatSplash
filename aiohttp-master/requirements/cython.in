@@ -1,4 +1,0 @@
--r multidict.in
--r typing-extensions.in  # required for parsing aiohttp/hdrs.py by tools/gen.py
-
-Cython
